@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+.left-section {
+    flex: 1;
+    text-align: left;
+    padding: 0px 0px 0px 10% ;
+}
+
+.left-section img {
+    width: 80px;
+}
+
+.left-section h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.left-section p {
+    color: #555;
+    font-size: 16px;
+}
+
+.right-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 2% 10% 2% 0px ;
+}
+
+.card {
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.form-group {
+    margin-bottom: 12px;
+    flex: 1;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: #2ec5b6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background: #2ab4a6;
+}
+
+.Terms-of-use {
+    font-size: 10px;
+    margin-top: 10px;
+}
+.Terms-of-use a {
+    color: #2ec5b6;
+}
+
+.Terms-of-uses {
+    font-size: 10px;
+    margin-top: 2px;
+    display: none;
+}
+
+.Terms-of-uses a {
+    color: #2ec5b6;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .right-section {
+        width: 100%;
+    }
+
+    .form-row {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .form-group {
+        text-align: left;   
+    }
+
+    .Terms-of-use {
+        display: none;
+    }
+
+    .Terms-of-uses {
+        display: block;
+    }
+}
